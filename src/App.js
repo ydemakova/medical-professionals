@@ -1,23 +1,23 @@
-import axios from 'axios'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
-import { API_URL } from './config'
+import AppointmentListPage from './components/appointment/AppointmentListPage'
+import ArticleListPage from './components/article/ArticleListPage'
+import AboutPage from './components/misc/AboutPage'
+import Header from './components/misc/Header'
+import HomePage from './components/misc/HomePage'
+import ProfilePage from './components/user/ProfilePage'
 
-function App() {
-	const handleLogout = async () => {
-		await axios.post(`${API_URL}/logout`, {}, { withCredentials: true })
-		// setUser(null)
-	}
+export default function App() {
 	return (
 		<div className="App">
+			<Header />
 			<Routes>
-				<Route path="/signin" element={<SignIn myError={myError} onSignIn={handleSignIn} />} />
-				<Route path="/signup" element={<SignUp />} />
+				<Route path="/articles" element={<AppointmentListPage />} />
+				<Route path="/appointments" element={<ArticleListPage />} />
+				<Route path="/profile" element={<ProfilePage />} />
+				<Route path="/about" element={<AboutPage />} />
+				<Route path="/" element={<HomePage />} />
 			</Routes>
 		</div>
 	)
 }
-
-export default App

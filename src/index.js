@@ -1,18 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
-import { UserProviderWrapper } from './context/app.context'
+import App from './App'
+import './index.css'
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<UserProviderWrapper>
-				<App />
-			</UserProviderWrapper>
+			<App />
 		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById('root'),
