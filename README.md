@@ -18,9 +18,9 @@ In the app the following resources (with corresponding properties) are to be imp
     - city
     - country
   - education (only if type is professional):
-    - specialization
-    - degree
-    - background
+  - specialization
+  - degree
+  - background
   - type (patient or professional)
 - Article:
   - title
