@@ -3,7 +3,7 @@ import React from 'react'
 export default function ArticleDetailPage() {
 	return (
 		<div>
-			<h1>Article detail page</h1>
+			<h3>Article detail page</h3>
 		</div>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AppointmentListPage() {
+export default function AppointmentList() {
 	return (
 		<div>
 			<h1>Appointment list page</h1>

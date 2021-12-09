@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import AppointmentListPage from './components/appointment/AppointmentListPage'
-import ArticleListPage from './components/article/ArticleListPage'
+import AppointmentList from './components/appointment/AppointmentList'
+import ArticleList from './components/article/ArticleListPage'
 import AboutPage from './components/misc/AboutPage'
+import Footer from './components/misc/Footer'
 import Header from './components/misc/Header'
 import HomePage from './components/misc/HomePage'
 import ProfilePage from './components/user/ProfilePage'
@@ -12,12 +13,13 @@ export default function App() {
 		<div className="App">
 			<Header />
 			<Routes>
-				<Route path="/articles" element={<AppointmentListPage />} />
-				<Route path="/appointments" element={<ArticleListPage />} />
+				<Route path="/articles" element={<AppointmentList />} />
+				<Route path="/appointments" element={<ArticleList />} />
 				<Route path="/profile" element={<ProfilePage />} />
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/" element={<HomePage />} />
 			</Routes>
+			<Footer />
 		</div>
 	)
 }

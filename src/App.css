@@ -1,6 +1,5 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
-body {
-	max-width: 1200px;
-	margin: 0 auto;
+.App {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
 }

@@ -1,6 +1,13 @@
 # Concept
 
+There is a Medical Professionals App, offering its vsistors to read various interesting articles in the medical sphere.
+The articles are provided by the best medical experts (their professinalism (education and professional background) is proved at the platform).
+Platform visitors can not only view the articles and doctors' profiles, but also ask for an appointment to be consulted in the special sphere.
+If platform users are doctors, they are privileged with the following CRUD activities, applied to their profile or / and articles: create a new one, read / edit it, delete it, view a request for an appointment, reject or accept it
+
 ## Resources
+
+In the app the following resources (with corresponding properties) are to be implemented:
 
 - User:
   - username
@@ -22,6 +29,7 @@
   - tags
   - links
   - status (draft, public)
+  - professional / doctor (as a ref)
 - Request (for consultation):
   - time and date
   - duration
@@ -32,7 +40,7 @@
 
 ## In General
 
-Resource (example):
+Resource routes for the project are divided into view Routes - React Routes and server side Routes - Express Routes (example):
 
 - view route (React):
   - list many examples: /examples
