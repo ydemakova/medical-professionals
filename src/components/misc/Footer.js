@@ -15,25 +15,15 @@ export default function Footer() {
 
 							<div className="col-md-5 col-12">
 								<div className="form-outline form-white mb-4">
-									<input
-										type="email"
-										id="form5Example29"
-										className="form-control"
-									/>
-									<label
-										className="form-label"
-										for="form5Example29"
-									>
+									<input type="email" id="form5Example29" className="form-control" />
+									<label className="form-label" htmlFor="form5Example29">
 										Email address
 									</label>
 								</div>
 							</div>
 
 							<div className="col-auto">
-								<button
-									type="submit"
-									className="btn btn-outline-light mb-4"
-								>
+								<button type="submit" className="btn btn-outline-light mb-4">
 									Subscribe
 								</button>
 							</div>
@@ -44,10 +34,7 @@ export default function Footer() {
 
 			<div className="text-center p-3">
 				© 2021 Copyright:&nbsp;
-				<a
-					className="text-white"
-					href="https://www.wizardingworld.com/"
-				>
+				<a className="text-white" href="https://www.wizardingworld.com/">
 					Medprofs.com
 				</a>
 			</div>

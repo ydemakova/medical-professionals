@@ -7,20 +7,20 @@ const router = express.Router()
 router.post('/', async (req, res, next) => {
 	const articleDto = req.body // "DTO" means data transfer object
 	const article = await Article.create(articleDto).catch((err) => next(err))
-	return res.json({ data: article })
+	return res.json(article)
 })
 
 // read one article
 router.get('/:id', async (req, res, next) => {
 	const { id } = req.params
 	const article = await Article.findById(id).catch((err) => next(err))
-	return res.json({ data: article })
+	return res.json(article)
 })
 
 // read many/all article
 router.get('/', async (req, res, next) => {
 	const articles = await Article.find().catch((err) => next(err))
-	return res.json({ data: articles })
+	return res.json(articles)
 })
 
 // update one article
@@ -29,7 +29,7 @@ router.put('/:id', async (req, res, next) => {
 	const articleDto = req.body // "DTO" means data transfer object
 	const options = { new: true }
 	const article = await Article.findByIdAndUpdate(id, articleDto, options).catch((err) => next(err))
-	return res.json({ data: article })
+	return res.json(article)
 })
 
 // delete one article

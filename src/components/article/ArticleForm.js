@@ -5,8 +5,8 @@ export default function AddEditArticle() {
 		<div>
 			<h3>Add / Edit Your Article</h3>
 			<form>
-				<div className="form-group row">
-					<label for="title" className="col-sm-2 col-form-label">
+				{/* <div className="form-group row">
+					<label htmlFor="title" className="col-sm-2 col-form-label">
 						Title
 					</label>
 					<div className="col-sm-5">
@@ -21,7 +21,7 @@ export default function AddEditArticle() {
 				</div>
 				<div className="form-group row">
 					<span>
-						<label className="my-1 mr-2" for="sphere">
+						<label className="my-1 mr-2" htmlFor="sphere">
 							Sphere
 						</label>
 					</span>
@@ -50,7 +50,7 @@ export default function AddEditArticle() {
 					</span>
 				</div>
 				<div className="form-group row">
-					<label for="text" className="col-sm-2 col-form-label">
+					<label htmlFor="text" className="col-sm-2 col-form-label">
 						Text
 					</label>
 					<div className="col-sm-5">
@@ -64,7 +64,7 @@ export default function AddEditArticle() {
 					</div>
 				</div>
 				<div className="form-group row">
-					<label for="location" className="col-sm-2 col-form-label">
+					<label htmlFor="location" className="col-sm-2 col-form-label">
 						Location
 					</label>
 					<div className="col-sm-5">
@@ -84,13 +84,13 @@ export default function AddEditArticle() {
 						className="custom-file-input"
 						id="customFile"
 					/>
-					<label className="custom-file-label" for="customFile">
+					<label className="custom-file-label" htmlFor="customFile">
 						Choose additional file for the topic
 					</label>
 				</div>
 				<button className="btn btn-primary" type="submit">
 					Submit form
-				</button>
+				</button> */}
 			</form>
 		</div>
 	)
